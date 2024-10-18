@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Helix Hub | Version: 0.1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Helix Hub | Version: 0.2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -139,6 +139,75 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+Tab:AddButton({
+	Name = "🎆Shaders🎇",
+	Callback = function()
+      		getgenv().RTX_Name = "rtxnamehere" --auto loaded shader function that optional
+ 
+--[[
+examples auto loads features :
+ 
+getgenv().RTX_Name = "Midday lite" -- the name of shaders
+ 
+]]
+ 
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "🔥Boost Fps🔥",
+	Callback = function()
+      		_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true-- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Explosions"] = true, -- Makes Explosion's invisible
+    ["No Clothes"] = true, -- Removes Clothing from the game
+    ["Low Water Graphics"] = true, -- Removes Water Quality
+    ["No Shadows"] = true, -- Remove Shadows
+    ["Low Rendering"] = true, -- Lower Rendering
+    ["Low Quality Parts"] = true -- Lower quality parts
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "🏙Part Rings🏙",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/SAZXHUB/SUPER_RING_BY_CAT_DEV/refs/heads/main/README.md"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "👀Visual👀",
 	Icon = "rbxassetid://4483345998",
@@ -152,28 +221,25 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "In Progres"
+	Name = "FE"
 })
 
 --[[
 Name = <string> - The name of the section.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "В разработке"
+Tab:AddButton({
+	Name = "🤖Vall Hop🤖",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/Tqe0KlAP/raw", true))()
+  	end    
 })
 
 --[[
-Name = <string> - The name of the section.
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "🛠"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
 
 local Tab = Window:MakeTab({
 	Name = "🎮Games🎮",
@@ -537,6 +603,70 @@ Tab:AddButton({
 	Name = "NocturneMoDz",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/BROOKHAVEN-GUI-/main/METAB", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "💲Pls Donate💲"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Auto Farm",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "🌊Zombie Attack🌊"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "LynethHub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Zombie-Attack-LynethHub-Autofarm-15923"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Script",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "VoidHub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidzyScripter/VoidHub-/main/Source%20Code"))();
   	end    
 })
 
