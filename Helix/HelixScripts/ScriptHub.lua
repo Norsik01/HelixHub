@@ -141,27 +141,6 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "🎆Shaders🎇",
-	Callback = function()
-      		getgenv().RTX_Name = "rtxnamehere" --auto loaded shader function that optional
- 
---[[
-examples auto loads features :
- 
-getgenv().RTX_Name = "Midday lite" -- the name of shaders
- 
-]]
- 
-
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
 	Name = "🔥Boost Fps🔥",
 	Callback = function()
       		_G.Settings = {
