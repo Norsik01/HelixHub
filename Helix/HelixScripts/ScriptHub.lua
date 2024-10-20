@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Helix Hub | Version: 0.2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Helix Hub | Version: 0.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -141,6 +141,27 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
+	Name = "🎆Shaders🎇",
+	Callback = function()
+      		getgenv().RTX_Name = "rtxnamehere" --auto loaded shader function that optional
+ 
+--[[
+examples auto loads features :
+ 
+getgenv().RTX_Name = "Midday lite" -- the name of shaders
+ 
+]]
+ 
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
 	Name = "🔥Boost Fps🔥",
 	Callback = function()
       		_G.Settings = {
@@ -187,30 +208,10 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Tab = Window:MakeTab({
-	Name = "👀Visual👀",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "FE"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
-	Name = "🤖Vall Hop🤖",
+	Name = "🟥UI Arceus V3🟥",
 	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/Tqe0KlAP/raw", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   	end    
 })
 
@@ -219,6 +220,29 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "👽Telecines👽",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "✍️Chat Draw✍️",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-chat-draw-script-17621"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "🎮Games🎮",
@@ -378,18 +402,9 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Farm Candy",
+	Name = "🍬Candy Auto Farm🍬",
 	Callback = function()
-      		_G.AutofarmSettings = {
- AntiAfk = true, 
- DelayFarm = 2.15,
- ResetWhenFullBag = true,
- CoinType = "Candy",
- Disable3DRendering = false,
- ImproveFPS = false,
- StartAutofarm = false
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoCapital2/MM2Autofarm/main/HalloweenScript"))("t.me/arceusxscripts")
+      		loadstring(game:HttpGet(('https://pastefy.app/FPGI0uTW/raw'),true))()
   	end    
 })
 
@@ -590,6 +605,18 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "F0rtuit0us",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Section = Tab:AddSection({
 	Name = "💲Pls Donate💲"
 })
@@ -631,18 +658,6 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Script",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
 	Name = "VoidHub",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidzyScripter/VoidHub-/main/Source%20Code"))();
@@ -652,4 +667,144 @@ Tab:AddButton({
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = " 🧲Magnet Simulator🧲"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "ToraScript",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/Magnetic'))() 
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "🕵️Prison Life🤵"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MinionRoblox/PRISON-LIFE/main/SCRIPT.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "✋Slap Battles✋"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Auto Farm Candy",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/SlapBattles/refs/heads/main/AutoFarmCandy.lua",true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "🐺Pets Go🐺"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2529a5f9dfddd5523ca4e22f21cceffa.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "👀Hide and Seek👀"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "GhostHub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20And%20Seek%20Extreme'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "🦴Голодные художники🦴"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://github.com/usernaxo/RobloxScripts/raw/main/StarvingArtists/DrawingScript.lua", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Key: usernaxo"
+})
+
+--[[
+Name = <string> - The name of the section.
 ]]
